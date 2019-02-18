@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Machine Learning in Disaster Risk Management</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used Conditional random field modelfor syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3 style="font-family: Georgia;">Machine Learning in Disaster Risk Management</h3>
+					<hr style="width: 20%; margin-top: 40px; margin-bottom: 40px;">
+					<h4><i>Suraj Regmi</i></h4>
+					<h5>Data Scientist @ The <i>World Bank</i></h5>
+					<h5>Researcher @ <i>AID</i></h5>
+				</section>
+				<section>
+					<h3>Disaster</h3>
+					<ul>
+						<li>Disaster ("bad Star" in <i>Greek</i>)</li>
+						<li>Consequence of inappropriately managed risk</li>
+						<li>Risk = Hazards + Vulnerability</li>
+						<li>Developing/low-income countries at high risk</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h3>Picture in Numbers</h3>
+						<ul>
+							<li>More than <i>95%</i> of total deaths occur in developing countries</li>
+							<li>Losses are <i>20</i> times greater in developing countries</li>
+						</ul>
+					</section>
+
+					<section>
+						<h3>More Data</h3>
+						<ul>
+							<li><i>1995 - 2014: 89%</i> of storm-related fatalities in lower-income countries with just <i>26%</i> of total storms</li>
+							<li>Past <i>30</i> years: <i> > 2.5</i> million people and <i>~ $4</i> trillion lost</li>
+							<li><i>1980</i>s to last decade: Global losses quadrupling from <i>$50B</i> p.a. to <i>$200B</i> p.a.</li>
+							<li><i>2017: $330</i> billion global losses</li>
+						</ul>
+						<p style="text-align: right; font-style: italic; font-size: 0.8em;">Credit: DRM Portal, The World Bank</p>
+					</section>
+
+					<section>
+						<h3>April <i>2015</i> Nepal Earthquake</h3>
+						<ul style="font-size: 0.9em;">
+							<li><i>7.8</i> Magnitude -- Mercalli Intensity of <i>VII</i> (severe) -- Barpak, Gorkha</li>
+							<li>Worst natural disaster since <i>1934</i> Nepal-Bihar earthquake</li>
+							<li><i>~ 9000</i> casulties and <i>~ 22000</i> injuries</li>
+							<li>Avalanche in Mt. Everest (<i>21</i> deaths) and Langtang valley (<i>250</i> missing)</li>
+							<li>Major aftershock: <i>7.3</i> magnitude on <i>12</i>th May (<i>~ 200</i> deaths and <i>~ 2000</i> injuries)</li>
+							<li>Economic loss: <i>9</i> to <i>50%</i> of GDP with best guess of <i>35%</i> (USGS)</li>
+							<li><i>$6,695</i> M needed to rebuild and recover; ~ half of that cost stemming from housing (<i>$3,278</i> million)</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<h3>Machine Learning and Artificial Intelligence</h3>
+					<ul>
+						<li>Machine Learning: Subset of AI, A technique for AI</li>
+						<li>Part of computer science since the late 1950s</li>
+						<li>ML: Computer programs that learn to perform specific tasks based on data inputs or rules</li>
+						<li>Supervised (labelled data) and Unsupervised (Statistical methods to group data with similar characteristics)</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Guatemala: Earthquake Vulnerability</h2>
+						<p>Study Done by:</p>
+						<ul style="font-style: italic;">
+							<li>Geospatial Operational Support Team (GOST), The World Bank</li>
+							<li>Social, Urban, Rural and Resilience Global Practice (GSURR), The World Bank</li>
+						</ul>
+						<p style="font-size: 0.5em; text-align: right;">Pictures Credit: GFDRR/The World Bank</p>
+					</section>
+
+					<section>
+						<h3>Losses</h3>
+						<img src = "img/guatemala_effects.png">
+					</section>
+
+					<section>
+						<h3>Challenge</h3>
+						<img src = "img/challenge.png">
+					</section>
+
+					<section>
+						<h3>The Solution</h3>
+						<img src = "img/solution.png">
+					</section>
+
+					<section>
+						<h3>Result</h3>
+						<img src = "img/result.png">
+					</section>
+
+					<section>
+						<h3>Map</h3>
+						<img src = "img/map_1.png" style="padding: 5px;">
+						<p style="font-size: 0.5em;">The map above illustrates the “Rapid Housing Quality Assessment”, done by <i>Sarah Antos</i>,
+							Geospatial Operations Support Team (GOST), World Bank</p>
+					</section>
+				</section>
+				<section>
+					<h3>Other Similar Studies</h3>
+					<ul>
+						<li>Urban Growth Monitoring by <i>Planet</i>; building Footprints (<i>77%</i>)</li>
+						<li>Targeting high-risk buildings for building inspection by <i>Azavea</i>; building violations (<i>74%</i>)</li>
+					</ul>
+				</section>
+
+				<section>
+					<section><h2>Social Exposure and Vulnerability Studies</h2></section>
+					<section>
+						<h3>Poverty Mappings</h3>
+						<ul>
+							<li>Sri Lanka Poverty Mapping by <i>WB Poverty Team</i>; <i>60-61%</i> of variance explained</li>
+							<li>Stanford Poverty Study by <i>Stanford University</i>; <i>72%</i> accuracy</li>
+							<li>Nepal Poverty Prediction by <i>Nepal Poverty Team, World Bank</i></li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Similar Study in Nepal</h2>
+					</section>
+
+					<section>
+						<h3>PD3R: Post Disaser Rapid Response Retrofitting</h3>
+						<ul>
+							<li><i>AID</i> and <i>Build Change Nepal</i> under the lead of <i>Kshitiz Rimal, Head of Research at AID</i></li>
+							<li>Deep learning solution for retrofitting</li>
+							<li>Competition project for "Call for Code" AI competition (IBM + CF); 1st Runner Up</li>
+						</ul>
+					</section>
+
+				</section>
+
+				<section>
+					<section>
+						<h3>To sum up ...</h3>
+					</section>
+
+					<section>
+						<h4>Reach me at:</h4>
+						<ul>
+							<li><i>sregmi@worldbank.org</i></li>
+							<li><i>regmi125@gmail.com</i></li>
+						</ul>
+					</section>
+				</section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
